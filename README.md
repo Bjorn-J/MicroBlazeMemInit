@@ -13,4 +13,4 @@ MemInit16.sv was developped for 64K byte RAM, which in this case is implemented 
 
 The initialization constants are implemented using defparam statements. The INITSTRING will need to be modified for other configurations, and should be verified by expanding the instance tree in ModelSim.
 
-In your tedt bench, where you would normally place defparam statements, add the line `include memInit.vh` (with back-tick).
+In your test bench, where you would normally place defparam statements, add the line `include memInit.vh` (with back-tick).
