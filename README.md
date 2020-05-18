@@ -11,6 +11,6 @@ Procedure to use:
 
 MemInit16.sv was developped for 64K byte RAM, which in this case is implemented as 16 2-bit block memories RAMB36E1. Parameters can be changed to accomodate other configurations.
 
-The initialization constants are implemented using defparam statements. The INITSTRING will need to be modified for other configurations, and should be verified by expanding the instance tree in ModelSim.
+The initialization constants are implemented using defparam statements. INITSTR will need to be modified for other configurations, and should be verified by expanding the instance tree in ModelSim.
 
 In your test bench, where you would normally place defparam statements, add the line `include memInit.vh` (with back-tick).
